@@ -22,8 +22,6 @@ TTL "key"
 ```
 
 
-
-
 ## Strings
 
 Define a key
@@ -81,4 +79,56 @@ DECR "key"
 Create a hash field as an increment counter
 ```
 HINCRBY "key" field increment
+```
+
+## Bits
+
+Define a key
+```
+SETBIT "key" offset value
+```
+
+Get a key
+```
+GETBIT "key" offset
+```
+
+Count of true
+```
+BITCOUNT "key"
+```
+
+Bitwise operations
+```
+BITOP AND destkey srckey1 srckey2 srckey3 ... srckeyN
+BITOP OR destkey srckey1 srckey2 srckey3 ... srckeyN
+BITOP XOR destkey srckey1 srckey2 srckey3 ... srckeyN
+BITOP NOT destkey srckey
+```
+
+## Lists
+
+Include item on left
+```
+LPUSH "key" value
+```
+
+Get by index
+```
+LINDEX "key" index
+```
+
+Get by range
+```
+LRANGE "key" start stop
+```
+
+List length
+```
+LLEN "key"
+```
+
+Trim a list
+```
+LTRIM "key" start stop
 ```
