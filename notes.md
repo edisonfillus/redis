@@ -113,6 +113,11 @@ Include item on left
 LPUSH "key" value
 ```
 
+Include item on right
+```
+RPUSH "key" value
+```
+
 Get by index
 ```
 LINDEX "key" index
@@ -131,4 +136,29 @@ LLEN "key"
 Trim a list
 ```
 LTRIM "key" start stop
+```
+
+Take element from the left
+```
+LPOP "key"
+```
+
+Take element from the left, waiting
+```
+BLPOP "key" seconds
+```
+
+Take element from the right
+```
+RPOP "key"
+```
+
+Take element from the right, waiting
+```
+BRPOP "key" seconds
+```
+
+Remove element from the list
+```
+LREM "key" count element
 ```
