@@ -162,3 +162,45 @@ Remove element from the list
 ```
 LREM "key" count element
 ```
+
+## Sets
+
+Add item to set
+```
+SADD "key" element
+```
+
+Item count
+```
+SCARD "key"
+```
+
+List elements
+```
+SMEMBERS "key"
+```
+
+Check if element exists
+```
+SISMEMBER "key" element
+```
+
+Remove element
+```
+SREM "key" element
+```
+
+Intersection between sets
+```
+SINTER "key1" ["key2" ...]
+```
+
+Union between sets
+```
+SUNION "key1" ["key2" ...]
+```
+
+Difference between sets
+```
+SDIFF "key1" ["key2" ...]
+```
