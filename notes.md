@@ -204,3 +204,26 @@ Difference between sets
 ```
 SDIFF "key1" ["key2" ...]
 ```
+## Sorted Sets (Ranking)
+
+Add item to set
+```
+ZADD "key" score member
+```
+
+Item count
+```
+ZCARD "key"
+```
+
+List itens ascending
+```
+ZRANGE "key" start end
+```
+OBS: to get all, set end as -1
+
+List itens descending
+```
+ZREVRANGE "key" start end
+```
+
