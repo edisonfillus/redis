@@ -224,6 +224,21 @@ OBS: to get all, set end as -1
 
 List itens descending
 ```
-ZREVRANGE "key" start end
+ZREVRANGE "key" start end WITHSCORES
 ```
 
+Get score of an member
+```
+ZSCORE "key" "member"
+```
+
+Get position of an member
+```
+ZRANK "key" "member"
+ZREVRANK "key" "member"
+```
+
+Increment member score
+```
+ZINCRBY "key" "increment" "member"
+````
